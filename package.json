@@ -1,0 +1,11 @@
+{
+	"name": "jpc-tap-desktop",
+	"version": "0.1.0",
+	"main": "main.js",
+	"devDependencies": {
+		"electron": "^27.1.0"
+	},
+	"scripts": {
+		"start": "electron ."
+	}
+}
