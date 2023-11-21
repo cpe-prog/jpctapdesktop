@@ -6,6 +6,10 @@
 		"electron": "^27.1.0"
 	},
 	"scripts": {
-		"start": "electron ."
+		"start": "electron .",
+		"build": "electron-builder"
+	},
+	"dependencies": {
+		"electron-is-dev": "^2.0.0"
 	}
 }
