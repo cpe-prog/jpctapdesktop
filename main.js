@@ -9,12 +9,13 @@ function createWindow() {
 	mainWindow = new BrowserWindow({
 		width: 800,
 		height: 600,
+		autoHideMenuBar: true,
 		webPreferences: {
 			nodeIntegration: true,
 		},
 	});
 
-	mainWindow.loadURL("http://localhost:3000"); // Set the URL of your Next.js app here
+	mainWindow.loadFile("index.html"); // Set the URL of your Next.js app here
 
 	mainWindow.on("closed", function () {
 		mainWindow = null;
