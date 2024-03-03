@@ -7,12 +7,16 @@ function createWindow() {
 		autoHideMenuBar: true,
 		width: 800,
 		height: 600,
+		minHeight: 600,
+		minWidth: 800,
+		icon: "icon.png",
+		title: "Barcode Scanner",
 		webPreferences: {
 			nodeIntegration: true,
 		},
 	});
 
-	mainWindow.loadFile("index.html");
+	mainWindow.loadURL("");
 
 	mainWindow.on("closed", function () {
 		mainWindow = null;
@@ -29,8 +33,6 @@ app.on("activate", function () {
 	if (mainWindow === null) createWindow();
 });
 
-// Listen for barcode data from the renderer process
 ipcMain.on("barcode-detected", (event, barcodeData) => {
-	// Send the barcode data back to the renderer to update the UI
 	mainWindow.webContents.send("update-barcode", barcodeData);
 });
