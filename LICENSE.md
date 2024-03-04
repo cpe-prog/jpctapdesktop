@@ -1,3 +1,7 @@
+MIT License
+
+Copyright (c) [2024] [powered by cpe-prog]
+
 # JPC-TAP POS Software License Agreement
 
 ## IMPORTANT - READ CAREFULLY
