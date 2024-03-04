@@ -16,7 +16,7 @@ function createWindow() {
 		},
 	});
 
-	mainWindow.loadURL("");
+	mainWindow.loadURL("http://localhost:8080/Dashboard/dashboard");
 
 	mainWindow.on("closed", function () {
 		mainWindow = null;
