@@ -16,7 +16,7 @@ function createWindow() {
 		},
 	});
 
-	mainWindow.loadURL("https://jpctap.vercel.app");
+	mainWindow.loadURL("https://jpc-tap.vercel.app/");
 
 	mainWindow.on("closed", function () {
 		mainWindow = null;
