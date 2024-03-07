@@ -9,8 +9,8 @@ function createWindow() {
 		height: 600,
 		minHeight: 600,
 		minWidth: 800,
-		icon: "icon.png",
-		title: "Barcode Scanner",
+		icon: "icon.ico",
+		title: "JpcTap-POS",
 		webPreferences: {
 			nodeIntegration: true,
 		},
@@ -31,8 +31,4 @@ app.on("window-all-closed", function () {
 
 app.on("activate", function () {
 	if (mainWindow === null) createWindow();
-});
-
-ipcMain.on("barcode-detected", (event, barcodeData) => {
-	mainWindow.webContents.send("update-barcode", barcodeData);
 });
