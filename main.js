@@ -6,7 +6,7 @@ function createWindow() {
 	mainWindow = new BrowserWindow({
 		autoHideMenuBar: true,
 		minHeight: 650,
-		minWidth: 900,
+		minWidth: 950,
 		icon: "icon.ico",
 		title: "JpcTap-POS",
 		webPreferences: {
