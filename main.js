@@ -5,10 +5,8 @@ let mainWindow;
 function createWindow() {
 	mainWindow = new BrowserWindow({
 		autoHideMenuBar: true,
-		width: 800,
-		height: 600,
-		minHeight: 600,
-		minWidth: 800,
+		minHeight: 650,
+		minWidth: 900,
 		icon: "icon.ico",
 		title: "JpcTap-POS",
 		webPreferences: {
@@ -16,7 +14,7 @@ function createWindow() {
 		},
 	});
 
-	mainWindow.loadURL("https://jpc-tap.vercel.app/");
+	mainWindow.loadURL("http://localhost:8080/");
 
 	mainWindow.on("closed", function () {
 		mainWindow = null;
