@@ -14,7 +14,7 @@ function createWindow() {
 		},
 	});
 
-	mainWindow.loadURL("http://localhost:8080/");
+	mainWindow.loadURL("https://jpc-tap.vercel.app/");
 
 	mainWindow.on("closed", function () {
 		mainWindow = null;
